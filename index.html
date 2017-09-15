@@ -1,0 +1,34 @@
+<!doctype html> 
+<head> 
+ 	<title>자바스크립트 실습</title> 
+ 	<style> 
+ 		input{font-size: 1em;} 
+ 		button{font-size: 1em;} 
+ 		body{font-size 3em;} 
+ 	</style> 
+</head> 
+ 
+
+<body> 
+ 	<h1 id="display">할인율 계산하기</h1> 
+ 	<input type="text" id="price" placeholder="가격."> 얼마? 
+ 	<input type="text" id="percent" placeholder="할인율."> 할인은? 
+ 	<br><button id="action">계산하기</button> 
+ 
+ 
+ 	<script> 
+       action.onclick = function(){ 
+ 			console.log("ok"); 
+ 			var myprice = price.value; 
+ 			var mypercent = percent.value; 
+			totalpercent(myprice, mypercent)
+ 	} 
+  
+ 	function totalpercent(price, percent){ 
+ 		var totalpercent = (price / 100) * percent; 
+ 		var Text = "할인가격은" + totalpercent + "원"; 
+ 		display.innerHTML = Text; 
+ 	} 
+ 	 
+ 	</script> 
+</body> 
